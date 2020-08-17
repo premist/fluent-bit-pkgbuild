@@ -1,5 +1,6 @@
 # Maintainer: Joost Molenaar <jjm@j0057.nl>
 # Contributor: Tim Meusel <tim@bastelfreak.de>
+# Contributor: Minku Lee <me@premi.st>
 
 pkgname=fluent-bit
 
@@ -42,6 +43,7 @@ build() {
         -DFLB_TLS=Yes \
         -DFLB_ALL=Yes \
         -DFLB_OUT_NATS=Yes \
+        -DFLB_OUT_PGSQL=Yes \
         -DFLB_HTTP_SERVER=Yes \
         ..
     make
